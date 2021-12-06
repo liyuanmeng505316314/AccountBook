@@ -12,7 +12,7 @@ const X=(
 const Y=document.getElementById('root')
 
 const render=()=>{
-    console.log(3121);
+    console.log(31221);
     ReactDOM.render(X,Y);
 }
 
