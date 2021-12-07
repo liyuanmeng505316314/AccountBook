@@ -1,50 +1,38 @@
 import * as React from "react";
-import {Routes, Route, Link, Navigate,} from "react-router-dom";
+import {Routes, Route, Navigate,} from "react-router-dom";
 import styled from "styled-components";
+import Nav from "./components/Nav"
+
 
 const Wrapper = styled.div`
-  background-color: darkcyan;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 `
 
 const Header = styled.header`
-  background-color: aquamarine;
   overflow: auto;
+  text-align: center;
 `
 
 const Main = styled.main`
-  background-color: darkgray;
   overflow: auto;
   flex: 1;
 `
 
 const Footer = styled.footer`
-  font-size: 40px;
+  font-size: 16px;
 `
 
-const Nav = styled.nav`
-  > ul {
-    display: flex;
-    > li {
-      width: 33.33%;
-      padding: 30px;
-      text-align: center;
-      >a{
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-  }
-`
+
 
 function App() {
     return (
         < Wrapper className="App">
 
             <Header>
-                <h1>欢迎使用 ----小孟账本!</h1>
+                <h2>小孟账本!</h2>
             </Header>
 
             <Main>
@@ -60,13 +48,7 @@ function App() {
             </Main>
 
             <Footer>
-                <Nav>
-                    <ul>
-                        <li><Link to="/tags">标签</Link></li>
-                        <li><Link to="/">记账</Link></li>
-                        <li><Link to="/statistics">统计</Link></li>
-                    </ul>
-                </Nav>
+                <Nav/>
             </Footer>
 
         </Wrapper>
