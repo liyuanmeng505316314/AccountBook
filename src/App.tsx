@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Routes, Route, Navigate,} from "react-router-dom";
+import {Routes,Route,Navigate } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "./components/Nav"
 
@@ -24,7 +24,6 @@ const Main = styled.main`
 const Footer = styled.footer`
   font-size: 16px;
 `
-
 
 
 function App() {

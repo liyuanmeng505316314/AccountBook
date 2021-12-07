@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import * as React from "react";
-
+import x from 'SVG/Tags.svg'
 
 const Nav = styled.nav`
   line-height: 24px;
@@ -23,11 +23,18 @@ const Nav = styled.nav`
   }
 `
 
+console.log(x);
+
 const Component = () => {
     return (
         <Nav>
             <ul>
-                <li><Link to="/tags">标签</Link></li>
+                <li>
+                    <svg fill="red" className="icon" >
+                        <use xlinkHref="#Tags"/>
+                    </svg>
+                    <Link to="/tags">标签</Link>
+                </li>
                 <li><Link to="/">记账</Link></li>
                 <li><Link to="/statistics">统计</Link></li>
             </ul>

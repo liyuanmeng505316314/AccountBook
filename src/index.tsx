@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {HashRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import './index.scss'
+import  {BrowserRouter} from "react-router-dom";
 
 const X=(
     <React.StrictMode>
-        <HashRouter>
+        <BrowserRouter>
         <App/>
-        </HashRouter>
+        </BrowserRouter>
     </React.StrictMode>
 )
 
