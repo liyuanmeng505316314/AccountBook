@@ -25,12 +25,13 @@ const Nav = styled.nav`
 
 console.log(x);
 
+
 const Component = () => {
     return (
         <Nav>
             <ul>
                 <li>
-                    <svg fill="red" className="icon" >
+                    <svg fill="red" className="icon">
                         <use xlinkHref="#Tags"/>
                     </svg>
                     <Link to="/tags">标签</Link>
